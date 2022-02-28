@@ -1,0 +1,99 @@
+@font-face {
+  font-family:"Oswald" ;
+  src: url(font/oswald/Oswald-Regular.ttf);
+}
+
+body{
+ 
+  text-decoration:dotted;
+  overflow: auto;
+}
+h1{
+  text-align: center;
+
+}
+main{
+  background-color:lightblue;
+
+  margin :auto;
+  width: 950px;
+  padding: 10px;
+  border-radius: 2%;
+  clear: both;
+}
+main img {
+ 
+  width:150px;
+  Height:150px;
+}
+.presentation{
+ display: inline-block;
+ justify-content:space-between;
+ margin-left: 150px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-right: 0px;
+  position:relative;
+  flex-wrap: wrap;
+
+  
+
+}
+.flex-container > div {
+ 
+  margin: 10px;
+  padding: 5px;
+  width: 50%;
+  border-radius: 2%;
+ 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  grid-auto-flow: column;
+  background-image: url(./img/back2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  
+
+}
+.grid-container > article {
+  
+  opacity: 1;
+  border: 1px solid ;
+  text-align: center;
+  
+}
+.grid-item1{
+  grid-column: 1 /  span 2 ;
+  grid-row: 1 / span 3;
+}
+.grid-item2{
+  grid-column: 4 / span 1 ;
+  padding: 5px;
+}
+.grid-item4{
+  grid-column: 4 /span 2;
+  
+}
+.grid-item3{
+  grid-row: 5/span 1;
+  grid-column: 1 /span 4;
+}
+.grid-item5{
+  grid-row:3/span 1;
+  grid-column: 4/span1;
+}
+.w3-container{
+  width: 250px;
+}
+.grid-item3 .w3-container{
+  width: 450px;px;
+}
+  
